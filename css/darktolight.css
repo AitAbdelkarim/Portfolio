@@ -1,0 +1,54 @@
+:root{
+    --BodyColorLight: #e2e2e2;
+    --HeaderLight: url("../assets/img/light.png");
+    --ColorFontLightOne: #6F6F6F;
+    --ColorFontLightTwo:#5B5F5E;
+    --BtnColorLightOne: #C5C5C5;
+    --BtnColorLightTwo:#B3B3B3;
+    --ShadowBtnLightOne: rgba(147, 147, 147, 0.2);
+    --ShadowBtnLightTwo: rgba(229, 229, 229, 0.9);
+    --ShadowBtnLightThree: rgba(147, 147, 147, 0.9);
+    --ShadowBtnLightFour: rgba(229, 229, 229, 0.3);
+    --ShadowBtnLightFive: rgba(147, 147, 147, 0.5);
+  
+    --BodyColorDark: #5E5E5E;
+    --HeaderDark: url("../assets/img/dark.png");
+    --ColorFontDarkOne: #C4C4C4;
+    --ColorFontDarkTwo: #E7E7E7;
+    --BtnColorDarkOne: #838383;
+    --BtnColorDarkTwo: #777777;
+    --ShadowBtnDarkOne: rgba(100, 100, 100, 0.2);
+    --ShadowBtnDarkTwo: rgba(150, 150, 150, 0.9);
+    --ShadowBtnDarkThree: rgba(100, 100, 100, 0.9);
+    --ShadowBtnDarkFour: rgba(150, 150, 150, 0.3);
+    --ShadowBtnDarkFive: rgba(100, 100, 100, 0.5);
+  }
+  
+  
+  .light_theme{
+    --body:  var(--BodyColorLight);
+    --header: var(--HeaderLight);
+    --fontone: var(--ColorFontLightOne);
+    --fonttwo: var(--ColorFontLightTwo);
+    --btnone: var(--BtnColorLightOne);
+    --btntwo: var(--BtnColorLightTwo);
+    --ShadowBtnOne: var(--ShadowBtnLightOne);
+    --ShadowBtnTwo: var(--ShadowBtnLightTwo);
+    --ShadowBtnThree: var(--ShadowBtnLightThree);
+    --ShadowBtnFour: var(--ShadowBtnLightFour);
+    --ShadowBtnFive: var(--ShadowBtnLightFive);
+  }
+  
+  .dark_theme{
+    --body: var(--BodyColorDark);
+    --header: var(--HeaderDark);
+    --fontone: var(--ColorFontDarkOne);
+    --fonttwo: var(--ColorFontDarkTwo);
+    --btnone: var(--BtnColorDarkOne);
+    --btntwo: var(--BtnColorDarkTwo);
+    --ShadowBtnOne: var(--ShadowBtnDarkOne);
+    --ShadowBtnTwo: var(--ShadowBtnDarkTwo);
+    --ShadowBtnThree: var(--ShadowBtnDarkThree);
+    --ShadowBtnFour: var(--ShadowBtnDarkFour);
+    --ShadowBtnFive: var(--ShadowBtnDarkFive);
+  }

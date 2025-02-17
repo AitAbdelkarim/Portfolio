@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js\script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+
+  <body id="body" class="light_theme">
+    <header>
+      <nav class="nav-btn">
+        <div class="left-buttons">
+          <div class="btn tooltip-container" onclick="openPopup('contact')">
+            <span class="material-icons-round">mail</span>
+            <span class="tooltip">Contact</span>
+          </div>
+          <div class="btn tooltip-container" onclick="openPopup('cv')">
+            <span class="material-icons-round">sd_card</span>
+            <span class="tooltip">CV</span>
+          </div>
+        </div>
+        <div class="title-desktop">
+          <h1 class="name-desktop" style="text-decoration: none;">Portfolio</h1>
+          <h2 class="name-desktop" style="text-decoration: none;">AIT ABDELKARIM Abdellah</h2>
+        </div>
+        <div class="btn tooltip-container" id="thememode">
+          <span class="material-icons-round">contrast</span>
+          <span class="tooltip" id="theme-tooltip">Dark mode</span>
+        </div>
+      </nav>
+      <div class="datetime-display">
+        <span id="current-date"></span>
+        <span id="current-time"></span>
+      </div>
+    </header>
+    <main>
+      <div class="title">
+          <h1 class="surname">Portfolio</h1>
+          <h2 class="name">AIT ABDELKARIM Abdellah</h2>
+      </div>
+      <div class="grid">
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('a propos')" id="element-one" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('parcours')"id="element-two" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('projets')"id="element-three" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('stage')"id="element-four" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('veille technologique')"id="element-five" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" onclick="openPopup('epreuve e4')"id="element-six" alt="" draggable="false"></a>
+        <a class="template-element" href="javascript:void(0);" id="element-seven" alt="" draggable="false" onclick="confirmClose()"> </a>
+      </div>
+    </main>
+</body>
+</html>
+
+
+
+<!------------------------  Contenu Popup ------------------------
+------------------------------------------------------------------>
+
+<div id="background"></div>  
+
+<!--------- A Propos ------------>
+<div class="wii-popup" id="a propos">
+  <div class="popup-content-info">
+    <h1>Présentation</h1>
+    <p>Salut, moi c'est AIT ABDELKARIM Abdellah 👋</p>
+    <p>
+      Je suis actuellement étudiant à l'école EPSI 🗺️ en deuxième année de BTS SIO
+      (Services Informatiques aux Organisations) dans l'option SLAM (Solutions Logicielles et Application Métier),
+      qui en gros est une option spécialisée pour le développement 💻.
+      Actuellement en cours d'études 🎓, je vous invite à découvrir sur ce portfolio les différentes formations,
+      projets et stages professionnels que j'ai réalisé tout au long de mon parcours 👩‍💻.
+    </p><br>
+
+    <h1>Qu'est ce que le BTS SIO  ?</h1>
+    <p> 
+      Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), 
+      s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau "option SISR" ou de développeur "option SLAM". 
+      Pour par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
+    </p><br>
+
+    <h1>Mes compétences développement</h1>
+    <p>
+      Toutes ces connaissances ont été acquises de différentes façons. 
+      Elles ont été acquises durant mes études en BTS SIO et d'autres par ma propre initiative en essayant de mettre en place des solutions. 
+    </p> 
+
+    <p class="logos">
+      <img src="assets/logo/html.png" alt="html" width="60" height="60">
+      <img src="assets/logo/css.png" alt="css" width="60" height="60">
+      <img src="assets/logo/js.png" alt="js" width="60" height="60">
+      <img src="assets/logo/php.png" alt="php" width="60" height="60">
+      <img src="assets/logo/python.png" alt="python" width="60" height="60">
+      <img src="assets/logo/flutter.png" alt="flutter" width="60" height="60">
+      <img src="assets/logo/mysql.png" alt="mysql" width="60" height="60">
+      <img src="assets/logo/mariadb.png" alt="mariadb" width="60" height="60">
+      <img src="assets/logo/postgresql.png" alt="postgresql" width="60" height="60">
+      <img src="assets/logo/laravel.png" alt="laravel" width="60" height="60">
+      <img src="assets/logo/git.png" alt="git" width="60" height="60">
+      <img src="assets/logo/linux.png" alt="linux" width="60" height="60">
+   </p><br>
+
+    <h1>Mes outils / logiciel </h1>
+    <p class="logos">
+      <img src="assets/logo/code-studio-visuel.png" alt="vscode" width="60" height="60">
+      <img src="assets/logo/studio-android.png" alt="androidstudio" width="60" height="60">
+      <img src="assets/logo/pycharm.png" alt="pycharm" width="60" height="60">
+      <img src="assets/logo/premiere-pro.png" alt="premiere-pro" width="60" height="60">
+      <img src="assets/logo/photoshop.png" alt="photoshop" width="60" height="60">
+      <img src="assets/logo/figma.png" alt="figma" width="60" height="60">
+      <img src="assets/logo/canva.png" alt="canva" width="60" height="60">
+      <img src="assets/logo/github.png" alt="github" width="60" height="60">
+      <img src="assets/logo/gitlab.png" alt="gitlat" width="60" height="60">
+      <img src="assets/logo/dbeaver.png" alt="dbeaver" width="60" height="60">
+      <img src="assets/logo/fedora.png" alt="fedora" width="60" height="60">
+    </p><br>
+
+    <h1>Mes passions </h1>
+    <p class="logos">
+      <img src="assets/logo/foot.png" alt="vscode" width="60" height="60">
+      <img src="assets/logo/course-a-pied.png" alt="androidstudio" width="60" height="60">
+      <img src="assets/logo/surf.png" alt="pycharm" width="60" height="60">
+      <img src="assets/logo/musique.png" alt="pycharm" width="60" height="60">
+      <img src="assets/logo/gaming.png" alt="pycharm" width="60" height="60">
+    </p><br>
+    <button class="wii-button" onclick="closePopup('a propos')">OK</button>
+  </div>
+</div>
+
+<!--------- Parcours ------------>
+<div class="wii-popup" id="parcours">
+  <div class="popup-content-info">
+    <h1>Mon Parcours Scolaire 🎓</h1><br>
+    <div class="education-card">
+      <div class="content">
+          <h3>2EME ANNEE BTS SIO (Service informatique aux organisations) option SLAM</h3>
+          <p class="school">EPSI • Rennes</p>
+          <div class="year">2024/2025</div>
+      </div>
+  </div><br>
+  <div class="education-card">
+    <div class="content">
+        <h3>LICENCE D’EDUCATION : SPECIALITE ENSEIGNEMENT SECONDAIRE - SCIENCE DE LA VIE ET DE LA TERRE</h3>
+        <p class="school">Ecole Normale Supérieur • Marrakech</p>
+        <div class="year">2022</div>
+    </div>
+  </div><br>
+  <div class="education-card">
+    <div class="content">
+        <h3>BACCALAUREAT SCIENTIFIQUE OPTION SCIENCES PHYSIQUES</h3>
+        <p class="school">Lycée Abou Abass Sebti • Marrakech</p>
+        <div class="year">2018</div>
+    </div>
+  </div><br>
+    <button class="wii-button" onclick="closePopup('parcours')">OK</button>
+  </div>
+</div>
+
+<!--------- Projets ------------>
+<div class="wii-popup" id="projets">
+  <div class="popup-content-info">
+    <h1>Mes Projets</h1>
+    <p>Voici quelques projets que j'ai réalisé durant mon parcours et ci-joints les liens pour mon <br>
+      <a href="https://gitlab.com/aitabdelkarimabdellah" target="_blank" style="text-decoration: underline;">Gitlab</a> et
+      <a href="https://github.com/AitAbdelkarim" target="_blank" style="text-decoration: underline;">Github</a>:
+    </p>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/img/bootstrap-site.png" alt="Projet 1">
+        <h3>Site Web</h3>
+        <div class="year">Html, Css</div>
+        <p>Réalisation d'un site internet nommé "Bootstrap".</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/divs.png" alt="Projet 2">
+        <h3>Catégories</h3>
+        <div class="year">Html, Css</div>
+        <p>Réalisation d'une page html avec un display grid.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/kechmara-voyage.png" alt="Projet 3">
+        <h3>Kechmara Voyage</h3>
+        <div class="year">Php, Sql, Html, Css</div>
+        <p>Réalisation d'une application pour une agence de tourisme avec des attentes définies.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/festival.png" alt="Projet 3">
+        <h3>Festival</h3>
+        <div class="year">Php, Html, Css</div>
+        <p>Réalisation d'une application permettant de gérer les groupes musicaux d'un festival.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/pokepsi.png" alt="Projet 3">
+        <h3>Pokepsi</h3>
+        <div class="year">Python</div>
+        <p>Développement d'un jeu illustrant le quotidien d'un étudiant.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/crm.png" alt="Projet 3">
+        <h3>La jolie boite</h3>
+        <div class="year">Python, Html, Css</div>
+        <p>Réalisation d'un site de CRM avec le framework Flask.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/shifumi.png" alt="Projet 3">
+        <h3>Shifumi</h3>
+        <div class="year">Php, Sql, Html, Css, Js</div>
+        <p>Développement d'un jeu de shifumi avec une certaine logique.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/tennis.png" alt="Projet 3">
+        <h3>Club tennis</h3>
+        <div class="year">Php, Sql, Html, Css</div>
+        <p>Réalisation d'une application pour un club de tennis avec des attentes définies.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/pokeclicker.png" alt="Projet 3">
+        <h3>Pokeclicker</h3>
+        <div class="year">Js, Html, Css</div>
+        <p>Développement d'un jeu de Cookie Clicker avec un thème Pokemon.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/pokeclicker.png" alt="Projet 3">
+        <h3>Portfolio</h3>
+        <div class="year">Html, Css</div>
+        <p>Description courte du projet.</p>
+      </div>
+    </div>
+    <button class="wii-button" onclick="closePopup('projets')">OK</button>
+  </div>
+</div>
+
+
+<!--------- Stage ------------>
+<div class="wii-popup" id="stage">
+  <div class="popup-content-info">
+    <h1>Mon Parcours Professionnel 🤵</h1><br>
+    <div class="education-card">
+      <div class="content">
+          <h3>STAGE EN DÉVELOPPEMENT WEB</h3>
+          <p class="school">Lery Technologies • Rennes</p>
+          <div class="year">2025 / 5 semaines</div>
+          <p>
+            • Authentification unique SSO.<br>
+            • Conception de base données Postgresql.<br>
+            • Git (Git flow / Tickets / Gitlab).<br>
+            • Documentation technique (Wiki Gitlab).<br>
+          </p>
+      </div>
+      <button class="wii-button" onclick="openPopup('rapport-sn2')">Rapport de stage</button>
+    </div><br>
+    <div class="education-card">
+      <div class="content">
+          <h3>STAGE EN DÉVELOPPEMENT WEB</h3>
+          <p class="school">Akodev • Rennes</p>
+          <div class="year">2024 / 2 mois</div>
+          <p>
+            • Développement d'une application web en utilisant le modèle MVC (Modèle-Vue-Controller).<br>
+            • Conception de base données MySQL.<br>
+            • Manipulation des données et La gestion des sessions utilisateur.
+          </p>
+      </div>
+      <button class="wii-button" onclick="openPopup('rapport-sn1')">Rapport de stage</button>
+    </div><br>
+    <div class="education-card">
+      <div class="content">
+          <h3>STAGE EN ENSEIGNEMENT</h3>
+          <p class="school">Lycée Abou El Abass Sebti • Marrakech</p>
+          <div class="year">2022 / 4 mois</div>
+          <p>
+            • Stage d’immersion en milieu scolaire en matière de science de la vie et de la terre.
+          </p>
+      </div>
+      <button class="wii-button" onclick="openPopup('rapport-ens')">Rapport de stage</button>
+    </div><br>
+    <button class="wii-button" onclick="closePopup('stage')">OK</button>
+  </div>
+</div>
+
+<!--------- Veille technologique ------------>
+<div class="wii-popup" id="veille technologique">
+  <div class="popup-content-info">
+    <h1>Qu'est-ce que la veille technologique ?</h1>
+    <p>
+      La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques,
+      les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance,
+      la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche,
+      développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc….
+      Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+    </p><br>
+    <h1>Sujet de la veille</h1>
+    <p>
+      J'ai décidé de traiter le sujet du développement fullstack, ma thématique est : 
+      "L'évolution des technologies et des pratiques en développement Full Stack".
+    </p><br>
+
+    <h1>1. Évolution des technologies Full Stack</h1>
+    <h2>Front-End : Nouveautés et tendances</h2>
+    <p>
+      • " Frameworks dominants " : React, Vue.js et Angular continuent d’évoluer. React 19, attendu en 2024,
+        promet des améliorations en performances et en ergonomie.<br>
+      • " CSS moderne " : Tailwind CSS et les nouvelles capacités de CSS natif (container queries, :has()) réduisent la dépendance aux préprocesseurs.<br>
+      • " Intégration IA & UI/UX " : L’IA commence à jouer un rôle dans la conception front-end (ex : génération de code automatisée avec ChatGPT, Copilot).
+    </p><br>
+
+    <h2>Back-End : Évolutions et nouvelles approches</h2>
+    <p>
+      • " Node.js vs Deno/Bun " : Deno et Bun cherchent à remplacer Node.js avec de meilleures performances et une sécurité intégrée.<br>
+      • " Microservices & Serverless " : De plus en plus d’applications passent d’une architecture monolithique à des microservices hébergés sur AWS Lambda, Firebase Functions, etc  .<br>
+      • " Langages et frameworks " :  NestJS (basé sur TypeScript) et Rust gagnent du terrain dans le développement backend.
+    </p><br>
+
+    <h1>2. DevOps et Cloud : Automatisation et Déploiement</h1>
+    <p>
+      • " Docker & Kubernetes " : Toujours des standards pour la gestion des conteneurs et le déploiement d’applications scalables.<br>
+      • " CI/CD avancé " : Automatisation des tests et des déploiements avec GitHub Actions, GitLab CI/CD.<br>
+      • " Sécurité " : Adoption croissante de pratiques Zero Trust et de solutions comme OWASP Dependency Check pour sécuriser les dépendances.
+    </p><br>
+
+    <h1>3. Outils et Bonnes Pratiques pour une Veille Technologique Efficace</h1>
+    <p>
+      • " Sites & blogs " : Dev.to, Smashing Magazine, CSS-Tricks, LogRocket.<br>
+      • " Newsletters " : TLDR, Frontend Weekly, JavaScript Weekly.<br>
+      • " Podcasts & YouTube " : Syntax.fm, The Changelog, Fireship.io
+    </p><br>
+
+    <button class="wii-button" onclick="closePopup('veille technologique')">OK</button>
+  </div>
+</div>
+
+
+
+
+<!--------- Epreuve E4 ------------>
+<div class="wii-popup" id="epreuve e4">
+  <div class="popup-content-info">
+    <br><br><br><br>
+    <h1>Qu'est ce que l'épreuveE4 🎓</h1>
+    <p>L’épreuve E4 est une épreuve clé du BTS SIO, elle doit être composée de minimun deux projets ayant un contexte commun en rapport avec l’option choisie (SLAM pour mon cas).
+      L’objectif de cette épreuve est d’évaluer le candidat sur une des deux situations professionnelles qu’il aura réalisées sur les 2 ans de formation.
+      Cette épreuve est aussi accompagnée d'un tableau des compétences, compétences qui devront être décrites et réalisées au cours des projets présentés.</p>
+    <button class="wii-button" onclick="closePopup('epreuve e4')">OK</button>
+  </div>
+</div>
+
+
+
+
+
+<!---------- Contact Form --------->
+<div class="wii-popup" id="contact">
+  <div class="popup-content">
+    <form class="wii-form">
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" class="wii-buttons">Envoyer</button>
+        <button type="button" class="wii-buttons" onclick="closePopup('contact')">Annuler</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!---------- CV --------->
+<div class="wii-popup" id="cv">
+  <div class="popup-content cv-container">
+    <div class="wii-header">
+      <span class="material-icons-round">description</span>
+      <h3>Curriculum Vitae</h3>
+      <button class="wii-button close-btn" onclick="closePopup('cv')">
+        <span class="material-icons-round">close</span>
+      </button>
+    </div>
+    <div class="cv-viewer">
+      <embed src="assets/pdf/cv.pdf" type="application/pdf" width="100%" height="100%" />
+    </div>
+  </div>
+</div>
+
+
+<!---------- Rapport de stage sn2--------->
+<div class="wii-popup" id="rapport-sn2">
+  <div class="popup-content cv-container">
+    <div class="wii-header">
+      <span class="material-icons-round">description</span>
+      <h3>Rapport de stage</h3>
+      <button class="wii-button close-btn" onclick="closePopup('rapport-sn2')">
+        <span class="material-icons-round">close</span>
+      </button>
+    </div>
+    <div class="cv-viewer">
+      <embed src="assets/pdf/" type="application/pdf" width="100%" height="100%" />
+    </div>
+  </div>
+</div>
+
+<!---------- Rapport de stage sn1--------->
+<div class="wii-popup" id="rapport-sn1">
+  <div class="popup-content cv-container">
+    <div class="wii-header">
+      <span class="material-icons-round">description</span>
+      <h3>Rapport de stage</h3>
+      <button class="wii-button close-btn" onclick="closePopup('rapport-sn1')">
+        <span class="material-icons-round">close</span>
+      </button>
+    </div>
+    <div class="cv-viewer">
+      <embed src="assets/pdf/RAPPORT STAGE SN1 - AIT ABDELKARIM Abdellah.pdf" type="application/pdf" width="100%" height="100%" />
+    </div>
+  </div>
+</div>
+
+<!---------- Rapport de stage ens--------->
+<div class="wii-popup" id="rapport-ens">
+  <div class="popup-content cv-container">
+    <div class="wii-header">
+      <span class="material-icons-round">description</span>
+      <h3>Rapport de stage</h3>
+      <button class="wii-button close-btn" onclick="closePopup('rapport-ens')">
+        <span class="material-icons-round">close</span>
+      </button>
+    </div>
+    <div class="cv-viewer">
+      <embed src="assets/pdf/rapport de stage ens.pdf" type="application/pdf" width="100%" height="100%" />
+    </div>
+  </div>
+</div>
+
+
+<!---------- Démarrage--------->
+<!-- <div class="wii-startup" id="wiiStartup">
+  <div class="wii-logo">
+    <div class="wii-text">Portfolio</div>
+    <div class="loading-dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="health-warning">
+      <p class="warning-title"> Appuyez pour commencer !</p>
+    </div>
+  </div>
+</div> -->
+
+
