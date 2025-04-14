@@ -14,6 +14,10 @@
     <header>
       <nav class="nav-btn">
         <div class="left-buttons">
+          <div class="btn tooltip-container" onclick="openPopup('mention legale')">
+            <span class="material-icons-round">article</span>
+            <span class="tooltip">Mentions légales</span>
+          </div>
           <div class="btn tooltip-container" onclick="openPopup('contact')">
             <span class="material-icons-round">mail</span>
             <span class="tooltip">Contact</span>
@@ -22,7 +26,7 @@
             <span class="material-icons-round">sd_card</span>
             <span class="tooltip">CV</span>
           </div>
-        </div>
+        </div> 
         <div class="title-desktop">
           <h1 class="name-desktop" style="text-decoration: none;">Portfolio</h1>
           <h2 class="name-desktop" style="text-decoration: none;">AIT ABDELKARIM Abdellah</h2>
@@ -35,7 +39,7 @@
       <div class="datetime-display">
         <span id="current-date"></span>
         <span id="current-time"></span>
-      </div>
+      </div>  
     </header>
     <main>
       <div class="title">
@@ -49,6 +53,7 @@
         <a class="template-element"  onclick="openPopup('stage')"id="element-four" alt="" draggable="false"></a>
         <a class="template-element"  onclick="openPopup('veille technologique')"id="element-five" alt="" draggable="false"></a>
         <a class="template-element"  onclick="openPopup('epreuve e4')"id="element-six" alt="" draggable="false"></a>
+        <a class="template-element"  onclick="openPopup('game')"id="element-eight" alt="" draggable="false"></a>
         <a class="template-element"  id="element-seven" alt="" draggable="false" onclick="confirmClose()"> </a>
       </div>
     </main>
@@ -73,13 +78,6 @@
       qui en gros est une option spécialisée pour le développement 💻.
       Actuellement en cours d'études 🎓, je vous invite à découvrir sur ce portfolio les différentes formations,
       projets et stages professionnels que j'ai réalisé tout au long de mon parcours 👩‍💻.
-    </p><br>
-
-    <h1>Qu'est ce que le BTS SIO  ?</h1>
-    <p> 
-      Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), 
-      s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau "option SISR" ou de développeur "option SLAM". 
-      Pour par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
     </p><br>
 
     <h1>Mes compétences développement</h1>
@@ -250,7 +248,10 @@
             • Documentation technique (Wiki Gitlab).<br>
           </p>
       </div>
-      <button class="wii-button" onclick="openPopup('rapport-sn2')">Rapport de stage</button>
+      <div class="buttons-stage">
+        <button class="wii-button" onclick="openPopup('rapport-sn2')">Rapport de stage</button>
+        <button class="wii-button" onclick="openPopup('')">Grille d'évaluation</button>
+      </div>
     </div><br>
     <div class="education-card">
       <div class="content">
@@ -263,7 +264,10 @@
             • Manipulation des données et La gestion des sessions utilisateur.
           </p>
       </div>
-      <button class="wii-button" onclick="openPopup('rapport-sn1')">Rapport de stage</button>
+      <div class="buttons-stage">
+        <button class="wii-button" onclick="openPopup('rapport-sn1')">Rapport de stage</button>
+        <button class="wii-button" onclick="openPopup('')">Grille d'évaluation</button>
+      </div>
     </div><br>
     <div class="education-card">
       <div class="content">
@@ -286,45 +290,51 @@
     <h1>Qu'est-ce que la veille technologique ?</h1>
     <p>
       La veille technologique, élément de la veille stratégique, consiste à surveiller les évolutions techniques,
-      les innovations dans un secteur d’activité donnée. La veille technologique comprend notamment la surveillance,
-      la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements en matière de recherche,
-      développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc….
-      Cela a pour but d’évaluer l’impact sur l’environnement et l’organisation.
+      les innovations dans un secteur d’activité donné. Elle inclut la surveillance, la collecte, le partage et la diffusion
+      d’informations permettant d’anticiper ou de s’informer sur des changements en matière de recherche,
+      développement, brevets, lancement de nouveaux produits, et innovations dans divers domaines.
     </p><br>
+
     <h1>Sujet de la veille</h1>
     <p>
-      J'ai décidé de traiter le sujet du développement fullstack, ma thématique est : 
-      "L'évolution des technologies et des pratiques en développement Full Stack".
+      J'ai décidé de traiter le sujet de l'intelligence artificielle appliquée à la biologie, ma thématique est :
+      "L'impact de l'IA sur la recherche biomédicale et la découverte de nouveaux traitements".
     </p><br>
 
-    <h1>1. Évolution des technologies Full Stack</h1>
-    <h2>Front-End : Nouveautés et tendances</h2>
+    <h1>1. L’IA au service de la biologie : Avancées et Applications</h1>
+    <h2>Génomique et médecine personnalisée</h2>
     <p>
-      • " Frameworks dominants " : React, Vue.js et Angular continuent d’évoluer. React 19, attendu en 2024,
-        promet des améliorations en performances et en ergonomie.<br>
-      • " CSS moderne " : Tailwind CSS et les nouvelles capacités de CSS natif (container queries, :has()) réduisent la dépendance aux préprocesseurs.<br>
-      • " Intégration IA & UI/UX " : L’IA commence à jouer un rôle dans la conception front-end (ex : génération de code automatisée avec ChatGPT, Copilot).
+      • <strong>AlphaFold</strong> : L’IA développée par DeepMind a révolutionné la prédiction de structures de protéines, accélérant la recherche sur les traitements.<br>
+      • <strong>Analyse du génome</strong> : L’IA aide à identifier des mutations génétiques responsables de maladies et à développer des thérapies ciblées.<br>
+      • <strong>Bio-informatique</strong> : L’utilisation d’algorithmes de machine learning permet d’analyser d’énormes ensembles de données génétiques.
     </p><br>
 
-    <h2>Back-End : Évolutions et nouvelles approches</h2>
+    <h2>IA et découverte de nouveaux médicaments</h2>
     <p>
-      • " Node.js vs Deno/Bun " : Deno et Bun cherchent à remplacer Node.js avec de meilleures performances et une sécurité intégrée.<br>
-      • " Microservices & Serverless " : De plus en plus d’applications passent d’une architecture monolithique à des microservices hébergés sur AWS Lambda, Firebase Functions, etc  .<br>
-      • " Langages et frameworks " :  NestJS (basé sur TypeScript) et Rust gagnent du terrain dans le développement backend.
+      • <strong>Drug Discovery</strong> : Des modèles d’IA sont utilisés pour identifier rapidement des molécules ayant un potentiel thérapeutique (ex : Insilico Medicine, Atomwise).<br>
+      • <strong>Simulation moléculaire</strong> : L’IA permet de simuler l’interaction de médicaments avec des protéines avant les essais en laboratoire.<br>
+      • <strong>Automatisation des essais cliniques</strong> : L'IA optimise la sélection des patients et l'analyse des résultats des essais.
     </p><br>
 
-    <h1>2. DevOps et Cloud : Automatisation et Déploiement</h1>
+    <h1>2. L’IA en biologie synthétique et bio-ingénierie</h1>
     <p>
-      • " Docker & Kubernetes " : Toujours des standards pour la gestion des conteneurs et le déploiement d’applications scalables.<br>
-      • " CI/CD avancé " : Automatisation des tests et des déploiements avec GitHub Actions, GitLab CI/CD.<br>
-      • " Sécurité " : Adoption croissante de pratiques Zero Trust et de solutions comme OWASP Dependency Check pour sécuriser les dépendances.
+      • <strong>Création de cellules artificielles</strong> : L’IA aide à concevoir des organismes synthétiques pour la production de biomatériaux ou de médicaments.<br>
+      • <strong>Optimisation des cultures cellulaires</strong> : Modélisation prédictive pour améliorer la croissance et la viabilité des cellules en laboratoire.<br>
+      • <strong>Applications en agriculture</strong> : L’IA permet de modifier des cultures pour les rendre plus résistantes aux maladies et aux conditions climatiques extrêmes.
     </p><br>
 
-    <h1>3. Outils et Bonnes Pratiques pour une Veille Technologique Efficace</h1>
+    <h1>3. Défis et Éthique de l’IA en biologie</h1>
     <p>
-      • " Sites & blogs " : Dev.to, Smashing Magazine, CSS-Tricks, LogRocket.<br>
-      • " Newsletters " : TLDR, Frontend Weekly, JavaScript Weekly.<br>
-      • " Podcasts & YouTube " : Syntax.fm, The Changelog, Fireship.io
+      • <strong>Fiabilité des modèles</strong> : L’IA produit parfois des résultats biaisés ou inexacts nécessitant validation expérimentale.<br>
+      • <strong>Questions éthiques</strong> : L’édition génétique assistée par IA (ex : CRISPR amélioré) pose des défis éthiques majeurs.<br>
+      • <strong>Protection des données</strong> : La collecte massive de données biomédicales soulève des enjeux de confidentialité et de sécurité.
+    </p><br>
+
+    <h1>4. Outils et Bonnes Pratiques pour une Veille Technologique en IA et Biologie</h1>
+    <p>
+      • <strong>Sites & blogs</strong> : Nature Biotechnology, MIT Technology Review, Bio-IT World.<br>
+      • <strong>Newsletters</strong> : AI in Healthcare, The AI Alignment Newsletter.<br>
+      • <strong>Podcasts & YouTube</strong> : Lex Fridman Podcast, DeepMind YouTube, Two Minute Papers.
     </p><br>
 
     <button class="wii-button" onclick="closePopup('veille technologique')">Retour</button>
@@ -334,12 +344,22 @@
 
 
 
-<!--------- Epreuve E4 ------------>
+
+<!--------- Epreuve E5 ------------>
 <div class="wii-popup" id="epreuve e4">
   <div class="popup-content-info">
     <br><br><br><br>
-    <h1>Qu'est ce que l'épreuveE4 🎓</h1>
-    <p>L’épreuve E4 est une épreuve clé du BTS SIO, elle doit être composée de minimun deux projets ayant un contexte commun en rapport avec l’option choisie (SLAM pour mon cas).
+
+    <h1>Qu'est ce que le BTS SIO  ?</h1>
+    <p> 
+      Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), 
+      s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau "option SISR" ou de développeur "option SLAM". 
+      Pour par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
+    </p><br>
+
+
+    <h1>Qu'est ce que l'épreuve E5 🎓</h1>
+    <p>L’épreuve E5 est une épreuve clé du BTS SIO, elle doit être composée de minimun deux projets ayant un contexte commun en rapport avec l’option choisie (SLAM pour mon cas).
       L’objectif de cette épreuve est d’évaluer le candidat sur une des deux situations professionnelles qu’il aura réalisées sur les 2 ans de formation.
       Cette épreuve est aussi accompagnée d'un tableau des compétences, compétences qui devront être décrites et réalisées au cours des projets présentés.</p>
     <button class="wii-button" onclick="closePopup('epreuve e4')">Retour</button>
@@ -347,8 +367,17 @@
 </div>
 
 
-
-
+<!------------ Jeu ------------>
+<div class="wii-popup" id="game">
+    <div class="popup-content">
+      <h2 style="text-decoration: none;">Entraînement à la visée</h2>
+        <p>Score : <span id="score">0</span></p>
+        <div class="game-area" id="gameArea">
+            <div class="target" id="target" onclick="increaseScore()"></div>
+        </div>
+        <button class='wii-button' onclick="closePopup('game')">Retour</button>
+    </div>
+</div>
 
 <!---------- Contact Form --------->
 <div class="wii-popup" id="contact">
@@ -439,9 +468,61 @@
   </div>
 </div>
 
+<!--------- Mention légale ------------>
+<div class="wii-popup" id="mention legale">
+  <div class="popup-content-info">
+    <h1>Mentions Légales</h1>
+
+    <h2>1. Éditeur du site</h2>
+    <p><strong>Nom :</strong> AIT ABDELKARIM Abdellah</p>
+    <p><strong>Adresse :</strong> 15 Place du gros chêne</p>
+    <p><strong>Email :</strong> aitabdelkarimabdellah@gmail.com</p>
+    <p><strong>Hébergeur :</strong> </p>
+
+    <h2>2. Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu présent sur ce site (textes, images, illustrations, logos, icônes, etc.) est protégé par le droit d'auteur et la propriété intellectuelle. Toute reproduction, modification ou diffusion, sans autorisation écrite préalable, est strictement interdite.</p>
+
+    <h2>3. Responsabilité</h2>
+    <p>L'éditeur du site ne saurait être tenu responsable des erreurs ou omissions dans les informations diffusées sur ce site. L'utilisateur est seul responsable de l'utilisation qu'il fait des informations disponibles.</p>
+
+    <h2>4. Contact</h2>
+    <p>Pour toute question ou demande d'information concernant le site, vous pouvez contacter l'éditeur à l'adresse suivante : aitabdelkarimabdellah@gmail.com.</p>
+
+    <h1>Politique de Confidentialité</h1>
+
+    <h2>1. Collecte des données</h2>
+    <p>Ce site peut collecter des données personnelles via des formulaires de contact ou des outils d'analyse de trafic. Ces informations sont collectées uniquement dans le cadre de l'amélioration des services et ne sont pas revendues à des tiers.</p>
+
+    <h2>2. Utilisation des cookies</h2>
+    <p>Des cookies peuvent être utilisés pour améliorer l'expérience utilisateur et analyser le trafic du site. Vous pouvez configurer votre navigateur pour les bloquer si vous le souhaitez.</p>
+
+    <h2>3. Droits des utilisateurs</h2>
+    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour exercer ces droits, contactez-moi à [Ton Email Professionnel].</p>
+
+    <h2>4. Sécurité des données</h2>
+    <p>Les informations collectées sont stockées de manière sécurisée et ne sont accessibles qu'à l'éditeur du site.</p>
+
+    <h1>Conditions d'Utilisation</h1>
+
+    <h2>1. Acceptation des conditions</h2>
+    <p>En accédant à ce site, vous acceptez pleinement et entièrement les présentes conditions d'utilisation. Si vous ne les acceptez pas, veuillez ne pas utiliser le site.</p>
+
+    <h2>2. Utilisation du site</h2>
+    <p>L'utilisateur s'engage à ne pas utiliser ce site à des fins illicites, frauduleuses ou nuisibles. Toute utilisation abusive pourra entraîner des mesures appropriées.</p>
+
+    <h2>3. Liens externes</h2>
+    <p>Ce site peut contenir des liens vers des sites tiers. L'éditeur du site ne saurait être tenu responsable du contenu de ces sites externes.</p>
+
+    <h2>4. Modification des conditions</h2>
+    <p>L'éditeur se réserve le droit de modifier ces conditions à tout moment. Il est de la responsabilité de l'utilisateur de les consulter régulièrement.</p>
+
+    <button class="wii-button" onclick="closePopup('mention legale')">Retour</button>
+  </div>
+</div>
+
 
 <!---------- Démarrage--------->
-<div class="wii-startup" id="wiiStartup">
+<!-- <div class="wii-startup" id="wiiStartup">
   <div class="wii-logo">
     <div class="wii-text">Portfolio</div>
     <div class="loading-dots">
@@ -454,6 +535,6 @@
       <p class="warning-title"> Appuyez pour commencer !</p>
     </div>
   </div>
-</div>
+</div> -->
 
 
