@@ -108,47 +108,47 @@ setInterval(updateDateTime, 1000);
 
 
 /************* démarage ************/
-// document.addEventListener('DOMContentLoaded', () => {
-//   const startup = document.getElementById('wiiStartup');
+document.addEventListener('DOMContentLoaded', () => {
+  const startup = document.getElementById('wiiStartup');
   
-//   setTimeout(() => {
-//     startup.style.opacity = '0';
-//     setTimeout(() => {
-//       startup.style.display = 'none';
-//     }, 1000);
-//   }, 20000);
+  setTimeout(() => {
+    startup.style.opacity = '0';
+    setTimeout(() => {
+      startup.style.display = 'none';
+    }, 1000);
+  }, 20000);
 
-//   // Optional: Close on click
-//   startup.addEventListener('click', () => {
-//     startup.style.opacity = '0';
-//     setTimeout(() => {
-//       startup.style.display = 'none';
-//     }, 1000);
-//   });
-// });
+  // Optional: Close on click
+  startup.addEventListener('click', () => {
+    startup.style.opacity = '0';
+    setTimeout(() => {
+      startup.style.display = 'none';
+    }, 1000);
+  });
+});
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const startup = document.getElementById("wiiStartup");
+document.addEventListener("DOMContentLoaded", function() {
+  const startup = document.getElementById("wiiStartup");
 
-//   // Fonction pour gérer la transition
-//   function hideStartup() {
-//     startup.classList.add("hidden");
+  // Fonction pour gérer la transition
+  function hideStartup() {
+    startup.classList.add("hidden");
 
-//     // Optionnel : cacher complètement après la transition
-//     setTimeout(() => {
-//       startup.style.display = "none";
-//     }, 1000); 
-//   }
+    // Optionnel : cacher complètement après la transition
+    setTimeout(() => {
+      startup.style.display = "none";
+    }, 1000); 
+  }
 
-//   // Attendre un moment avant de cacher la page de démarrage
-//   const timeoutId = setTimeout(hideStartup, 20000);
+  // Attendre un moment avant de cacher la page de démarrage
+  const timeoutId = setTimeout(hideStartup, 20000);
 
-//   // Ajouter un gestionnaire d'événements de clic
-//   startup.addEventListener("click", function() {
-//     clearTimeout(timeoutId);
-//     hideStartup();
-//   });
-// });
+  // Ajouter un gestionnaire d'événements de clic
+  startup.addEventListener("click", function() {
+    clearTimeout(timeoutId);
+    hideStartup();
+  });
+});
 
 
 /************* Jeu ************/
