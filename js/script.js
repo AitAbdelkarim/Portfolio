@@ -85,6 +85,22 @@ function closePopup(id) {
 }
 
 
+    // Fermer la popup en cliquant sur les côtés de la popup
+document.addEventListener("DOMContentLoaded", function () {
+  const background = document.getElementById("background");
+  const popups = document.querySelectorAll(".wii-popup");
+
+  popups.forEach((popup) => {
+    popup.addEventListener("click", function (event) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+        background.style.display = "none";
+      }
+    });
+  });
+});
+
+
 /************* date et temps ************/
 
 function updateDateTime() {
