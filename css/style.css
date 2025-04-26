@@ -827,10 +827,22 @@ main {
   z-index: 1000;
 }
 
-.image-container:hover .hover-text {
-  opacity: 1;
-  visibility: visible;
+.hover-text:after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #0072BB transparent;
 }
+
+.image-container:hover .hover-text {
+  visibility: visible;
+  animation: popIn 0.2s ease-out;
+}
+
 /********************** Parcours *************************/
 .education-card {
   background-color: #969090;
