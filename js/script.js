@@ -185,6 +185,13 @@ function moveTarget() {
     target.style.top = newY + "px";
 }
 
+/************* Rdirection vers d'autres pages ************/
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    window.open(card.dataset.link, '_blank');
+  });
+});
+
 
 /************* Éteindre ************/
 function confirmClose() {

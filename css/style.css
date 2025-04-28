@@ -432,6 +432,11 @@ main {
   text-align: center;
   padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: url('../assets/cursor/large-pointer.png'), auto;
+}
+
+.project-card * {
+  cursor: url('../assets/cursor/large-pointer.png'), auto;
 }
 
 .project-card:hover {
